@@ -10,9 +10,9 @@ Docker image URLs:
 * https://hub.docker.com/repository/docker/eakbari/jupyter-notebook
 * https://hub.docker.com/repository/docker/eakbari/sonar
 
-Steps for running images:
-All are deployed from kubernetes cluster: cs1660-data-processing-toolbox
-Deploy > expose
+Steps for running images:\
+All are deployed from kubernetes cluster: cs1660-data-processing-toolbox\
+Deploy > expose\
 From cli:
 * docker run -p 8080:8080 eakbari/apachehadoop:latest
 * docker run -p 8080:80880 eakbari/apachespark:latest
