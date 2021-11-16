@@ -1,0 +1,6 @@
+projectKey=cs1660
+serverUrl=http://127.0.0.1:9000
+serverVersion=9.1.0.47736
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=cs1660
+ceTaskId=AX0pDr8pC-Tpqubcr3L5
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AX0pDr8pC-Tpqubcr3L5
