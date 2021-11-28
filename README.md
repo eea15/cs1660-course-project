@@ -10,6 +10,9 @@ Dockerfile: just one Dockerfile
 
 Docker image URLs: 
 * Apache Hadoop: bde2020/hadoop-datanode, bde2020/hadoop-namenode
+* Apache Spark: bde2020/spark-base, bde2020/spark-master, bde2020/spark-worker
+* Jupyter Notebook: jupyter/all-spark-notebook
+* SonarQube and SonarScanner: sonarqube
 
 ### Steps ###
 
@@ -36,6 +39,18 @@ Source: https://github.com/big-data-europe/docker-hadoop
 6. Click endpoint url
 For Datanode, do same steps except copy SERVICE_PRECONDITION (change port), update replicas to 2, and no service is needed
 
+Apache Spark:
+1. Pull the 3 spark images from Docker Hub (bde2020/spark-base, bde2020/spark-master, bde2020/spark-worker)
+2. Push to google container registry
+3. Run Kubernetes deployment steps listed here: https://github.com/big-data-europe/docker-spark
+4. Expose master pod
+
 Jupyter Notebook:
 1. Follow https://cloud.google.com/architecture/spawning-notebook-servers-on-gke-tutorial
+
+SonarQube and SonarScanner:
+1. Pull sonarqube image from Docker Hub
+2. Push to google container registry
+3. Create deployment
+4. Expose
 
