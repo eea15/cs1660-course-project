@@ -13,7 +13,14 @@ Docker image URLs:
 
 ### Steps ###
 
-#### Deployment #####
+#### Running the Main Application ####
+1. Compile: javac ProcessingToolbox.java
+2. Run: java ProcessingToolbox.java
+3. Enter a valid number to choose a microservice
+    1. Follow the listed URL
+4. Enter an invalid number to quit
+
+#### Deployment Steps I Took #####
 
 Apache Hadoop:
 Source: https://github.com/big-data-europe/docker-hadoop
@@ -29,10 +36,6 @@ Source: https://github.com/big-data-europe/docker-hadoop
 6. Click endpoint url
 For Datanode, do same steps except copy SERVICE_PRECONDITION (change port), update replicas to 2, and no service is needed
 
-#### Running the Main Application ####
-1. Compile: javac ProcessingToolbox.java
-2. Run: java ProcessingToolbox.java
-3. Enter a valid number to choose a microservice
-    1. Follow the listed URL
-4. Enter an invalid number to quit
+Jupyter Notebook:
+1. Follow https://cloud.google.com/architecture/spawning-notebook-servers-on-gke-tutorial
 
