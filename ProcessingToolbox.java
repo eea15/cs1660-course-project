@@ -7,23 +7,28 @@ public class ProcessingToolbox {
 
         // main interface
         System.out.println("Welcome to the Big Data Processing Application");
-        System.out.println("Please type the number that corresponds to which application you would like to run: ");
-        System.out.println("1. Apache Hadoop\n2. Apache Spark\n3. Jupyter Notebook\n4. SonarQube and SonarScanner\n");
-        System.out.println("Type the number here (or invalid number to quit) >");
-        int choice = inScan.nextInt();
-        inScan.nextLine();
+        int choice = 0;
+        
+        do {
+            System.out.println("Please type the number that corresponds to which application you would like to run: ");
+            System.out.println("1. Apache Hadoop\n2. Apache Spark\n3. Jupyter Notebook\n4. SonarQube and SonarScanner\n");
+            System.out.println("Type the number here (or invalid number to quit) >");
+            choice = inScan.nextInt();
 
-        if(choice == 1) { // Apache Hadoop
-            System.out.println("Apache Hadoop");
-        } else if(choice == 2) { // Apache Spark
-            System.out.println("Apache Spark");
-        } else if(choice == 3) { // Jupyter Notebook
-            System.out.println("Jupyter Notebook");
-        } else if(choice == 4) { // SonarQube and SonarScanner
-            System.out.println("SonarQube and SonarScanner");
-        } else {
-            System.out.println("Quitting...");
-        }
+            if(choice == 1) { // Apache Hadoop
+                System.out.println("Apache Hadoop:");
+                System.out.println("Go to http://35.223.167.177:9870/dfshealth.html#tab-overview\n");
+            } else if(choice == 2) { // Apache Spark
+                System.out.println("Apache Spark");
+            } else if(choice == 3) { // Jupyter Notebook
+                System.out.println("Jupyter Notebook");
+            } else if(choice == 4) { // SonarQube and SonarScanner
+                System.out.println("SonarQube and SonarScanner");
+            } else {
+                System.out.println("Quitting...");
+            }
+            inScan.nextLine();
+        } while(choice == 1 || choice == 2 || choice == 3 || choice == 4);
 
         inScan.close();
        
