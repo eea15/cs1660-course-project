@@ -2,7 +2,7 @@
 
 ### This is the cs1660 course project option 1. ###
 
-Video walkthrough:
+Video walkthrough: https://app.box.com/s/xdu0ot8gu3r2jsp35n2t7cpiyqzsdmyg
 
 Source code for main application: ProcessingToolbox.java
 
