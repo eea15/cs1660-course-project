@@ -20,11 +20,12 @@ public class ProcessingToolbox {
                 System.out.println("Go to http://35.223.167.177:9870/dfshealth.html#tab-overview\n");
             } else if(choice == 2) { // Apache Spark
                 System.out.println("Apache Spark");
-                System.out.println("Go to https://30baf23784064eb6-dot-us-west1.notebooks.googleusercontent.com/lab/tree/Untitled.ipynb\n");
             } else if(choice == 3) { // Jupyter Notebook
                 System.out.println("Jupyter Notebook");
+                System.out.println("Go to https://30baf23784064eb6-dot-us-west1.notebooks.googleusercontent.com/lab/tree/Untitled.ipynb\n");
             } else if(choice == 4) { // SonarQube and SonarScanner
                 System.out.println("SonarQube and SonarScanner");
+                System.out.println("Go to http://34.75.153.182/sessions/new?return_to=%2F\n");
             } else {
                 System.out.println("Quitting...");
             }
